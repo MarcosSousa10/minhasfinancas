@@ -55,8 +55,4 @@ public class UsuarioServiceImpl implements UsuarioService{
         return repository.findById(id);
     }
 
-    @Override
-    public Optional<Usuario> obterPorId(Usuario usuario) {
-        // TODO Auto-generated method stub
-        return Optional.empty();
-    }
+}

@@ -93,7 +93,7 @@ public class LancamentoResource {
                  entity.setStatus(statusSelecionado);
             service.atualizar(entity);
             return ResponseEntity.ok(entity);
-            }catch(RegraNegocioException e){
+            }catch(RegraNegocioException e){ 
                 return ResponseEntity.badRequest().body(e.getMessage());
             }
            

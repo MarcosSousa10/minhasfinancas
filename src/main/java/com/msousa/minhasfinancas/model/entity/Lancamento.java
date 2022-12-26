@@ -49,11 +49,13 @@ public class Lancamento {
     @Column(name="data_cadastro")
     @Convert(converter = Jsr310JpaConverters.LocalDateConverter.class)
     private LocalDate dataCadastro;
+    
+    @Column(name="tipo")
     @Enumerated(value = EnumType.STRING)
-    @JoinColumn(name="tipo")
     private TipoLancamento tipo;
+    
+    @Column(name="status")
     @Enumerated(value = EnumType.STRING)
-    @JoinColumn(name="status")
     private StatusLancamento status;
     
     
